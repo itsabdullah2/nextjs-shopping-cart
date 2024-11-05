@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import CommonLayout from '@/components/common-layout';
 import { Footer, Navbar } from '@/components';
+import { AppStateProvider } from '@/context';
 
 export const metadata: Metadata = {
   title: 'Shopping Cart',
@@ -15,10 +16,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` antialiased`}>
-        <Navbar />
-        <CommonLayout>{children}</CommonLayout>
-        <Footer />
+      <body className={`antialiased`}>
+        <AppStateProvider>
+          {/* <Navbar /> */}
+          <CommonLayout>{children}</CommonLayout>
+          {/* <Footer /> */}
+        </AppStateProvider>
       </body>
     </html>
   );

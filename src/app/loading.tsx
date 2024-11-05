@@ -1,8 +1,6 @@
 const Loading = () => {
   return (
-    <div className="absolute top-0 left-0 w-full h-full bg-black">
-      Loading....
-    </div>
+    <div className="text-primary font-medium text-[18px]">Loading....</div>
   );
 };
 
