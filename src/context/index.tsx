@@ -29,7 +29,7 @@ export const AppStateProvider = ({
     const getData = async () => {
       setIsLoading(true);
       await new Promise((resolve) =>
-        setTimeout(resolve, Math.random() * 6000 + 500)
+        setTimeout(resolve, Math.random() * 4000 + 500)
       );
       setProducts(listOfProducts);
       setIsLoading(false);
@@ -38,7 +38,23 @@ export const AppStateProvider = ({
   }, []);
 
   const handleAddToCart = (product: ProductsType): void => {
-    setCart((prev) => [...prev, product]);
+    setCart((prev) => {
+      const isExist = prev.find((item: ProductsType) => item.id === product.id);
+
+      if (isExist) {
+        // Product exists, increment quantity
+        const updatedCart = prev.map((item) =>
+          item.id === product.id
+            ? { ...item, quantity: item.quantity + 1 }
+            : item
+        );
+
+        return updatedCart;
+      } else {
+        // Product doesn't exist, add it with quantity 1
+        return [...prev, { ...product, quantity: 1 }];
+      }
+    });
   };
 
   const values: AppStateContextType = {
