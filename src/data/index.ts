@@ -14,107 +14,158 @@ import watch3 from './watch-3.jpg';
 export interface ProductsType {
   id: string;
   title: string;
-  desc: string;
+  supDescription: string;
+  description: string;
   category: string;
   imgUrl: string;
   price: string;
+  rate: number;
+  quantity: number;
 }
 
 export const listOfProducts: ProductsType[] = [
   {
     id: '1',
     title: 'sneakers',
-    desc: 'sporting sneakers',
+    supDescription: 'sporting sneakers',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut facilis sequi explicabo in labore possimus perferendis aspernatur, quasi non reiciendis, laudantium atque et, architecto eum dignissimos. Quidem nostrum omnis deserunt.',
     category: 'Sneakers',
     imgUrl: sneakers1.src,
     price: '90',
+    rate: 4.5,
+    quantity: 1,
   },
   {
     id: '2',
     title: 'sneakers',
-    desc: 'sporting sneakers',
+    supDescription: 'sporting sneakers',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut facilis sequi explicabo in labore possimus perferendis aspernatur, quasi non reiciendis, laudantium atque et, architecto eum dignissimos. Quidem nostrum omnis deserunt.',
     category: 'Sneakers',
     imgUrl: sneakers2.src,
     price: '95',
+    rate: 4,
+    quantity: 1,
   },
   {
     id: '3',
     title: 'sneakers',
-    desc: 'sporting sneakers',
+    supDescription: 'sporting sneakers',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut facilis sequi explicabo in labore possimus perferendis aspernatur, quasi non reiciendis, laudantium atque et, architecto eum dignissimos. Quidem nostrum omnis deserunt.',
     category: 'Sneakers',
     imgUrl: sneakers3.src,
     price: '100',
+    rate: 5,
+    quantity: 1,
   },
   {
     id: '4',
     title: 'camera',
-    desc: 'Camera for content creation',
+    supDescription: 'Camera for content creation',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut facilis sequi explicabo in labore possimus perferendis aspernatur, quasi non reiciendis, laudantium atque et, architecto eum dignissimos. Quidem nostrum omnis deserunt.',
     category: 'Camera',
     imgUrl: camera1.src,
     price: '500',
+    rate: 4.5,
+    quantity: 1,
   },
   {
     id: '5',
     title: 'camera',
-    desc: 'Camera for content creation',
+    supDescription: 'Camera for content creation',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut facilis sequi explicabo in labore possimus perferendis aspernatur, quasi non reiciendis, laudantium atque et, architecto eum dignissimos. Quidem nostrum omnis deserunt.',
     category: 'Camera',
     imgUrl: camera2.src,
     price: '600',
+    rate: 4,
+    quantity: 1,
   },
   {
     id: '6',
     title: 'camera',
-    desc: 'Camera for content creation',
+    supDescription: 'Camera for content creation',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut facilis sequi explicabo in labore possimus perferendis aspernatur, quasi non reiciendis, laudantium atque et, architecto eum dignissimos. Quidem nostrum omnis deserunt.',
     category: 'Camera',
     imgUrl: camera3.src,
     price: '650',
+    rate: 4,
+    quantity: 1,
   },
   {
     id: '7',
     title: 'watch',
-    desc: 'Watch for casual men',
+    supDescription: 'Watch for casual men',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut facilis sequi explicabo in labore possimus perferendis aspernatur, quasi non reiciendis, laudantium atque et, architecto eum dignissimos. Quidem nostrum omnis deserunt.',
     category: 'Watch',
     imgUrl: watch1.src,
     price: '300',
+    rate: 4.5,
+    quantity: 1,
   },
   {
     id: '8',
     title: 'watch',
-    desc: 'Watch for casual men',
+    supDescription: 'Watch for casual men',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut facilis sequi explicabo in labore possimus perferendis aspernatur, quasi non reiciendis, laudantium atque et, architecto eum dignissimos. Quidem nostrum omnis deserunt.',
     category: 'Watch',
     imgUrl: watch2.src,
     price: '350',
+    rate: 5,
+    quantity: 1,
   },
   {
     id: '9',
     title: 'watch',
-    desc: 'Watch for casual men',
+    supDescription: 'Watch for casual men',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut facilis sequi explicabo in labore possimus perferendis aspernatur, quasi non reiciendis, laudantium atque et, architecto eum dignissimos. Quidem nostrum omnis deserunt.',
     category: 'Watch',
     imgUrl: watch3.src,
     price: '200',
+    rate: 3.5,
+    quantity: 1,
   },
   {
     id: '10',
     title: 'backpack',
-    desc: 'Your backpack for any trip',
+    supDescription: 'Your backpack for any trip',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut facilis sequi explicabo in labore possimus perferendis aspernatur, quasi non reiciendis, laudantium atque et, architecto eum dignissimos. Quidem nostrum omnis deserunt.',
     category: 'Backpack',
     imgUrl: backpack1.src,
     price: '150',
+    rate: 5,
+    quantity: 1,
   },
   {
     id: '11',
     title: 'backpack',
-    desc: 'Your backpack for any trip',
+    supDescription: 'Your backpack for any trip',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut facilis sequi explicabo in labore possimus perferendis aspernatur, quasi non reiciendis, laudantium atque et, architecto eum dignissimos. Quidem nostrum omnis deserunt.',
     category: 'Backpack',
     imgUrl: backpack2.src,
     price: '120',
+    rate: 5,
+    quantity: 1,
   },
   {
     id: '12',
     title: 'backpack',
-    desc: 'Your backpack for any trip',
+    supDescription: 'Your backpack for any trip',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut facilis sequi explicabo in labore possimus perferendis aspernatur, quasi non reiciendis, laudantium atque et, architecto eum dignissimos. Quidem nostrum omnis deserunt.',
     category: 'Backpack',
     imgUrl: backpack3.src,
     price: '100',
+    rate: 4.5,
+    quantity: 1,
   },
 ];
