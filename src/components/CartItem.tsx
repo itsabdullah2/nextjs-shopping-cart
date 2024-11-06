@@ -7,7 +7,7 @@ const CartItem = () => {
   const { cart } = useAppState() || {};
 
   return (
-    <div className="flex-1 grid grid-cols-1 gap-4">
+    <div className="flex-1 flex flex-col gap-4">
       {/* Render product items if cart exists and has items */}
       {cart && cart.length > 0 ? (
         cart.map((item) => (
@@ -23,7 +23,7 @@ const CartItem = () => {
             />
             <div>
               <h2>{item.title}</h2>
-              <p>{item.desc}</p>
+              <p>{item.supDescription}</p>
             </div>
           </div>
         ))
