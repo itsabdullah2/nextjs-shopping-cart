@@ -16,13 +16,14 @@ const CartItem = () => {
         cart.map((item) => (
           <div
             key={item.id}
-            className="flex gap-4 even:bg-slate-200 bg-slate-100 rounded-md overflow-hidden h-fit relative"
+            className="flex flex-col lg:flex-row gap-2 lg:gap-4 even:bg-slate-200 bg-slate-100 rounded-xl overflow-hidden h-fit relative"
           >
             <Image
               src={item.imgUrl}
               alt={item.title}
               width={200}
               height={200}
+              className="w-full lg:w-[200px]"
             />
             <div className="p-4 flex justify-between w-full">
               <div>
@@ -32,7 +33,7 @@ const CartItem = () => {
                 <p className="text-second font-medium text-[17px]">
                   {item.supDescription}
                 </p>
-                <p className="text-primary leading-[150%] text-[18px] xl:text-2xl font-semibold mt-3">
+                <p className="text-primary leading-[150%] text-xl xl:text-2xl font-semibold mt-1 lg:mt-3">
                   ${item.price}
                 </p>
               </div>
@@ -55,7 +56,7 @@ const CartItem = () => {
               </div>
             </div>
             <button
-              className="py-2 px-4 bg-slate-200 border border-slate-300 hover:border-primary duration-300 absolute top-3 right-3 text-second hover:text-primary rounded-md"
+              className="py-2 px-2 lg:px-4 bg-slate-200 border border-slate-300 hover:border-primary duration-300 absolute top-3 right-3 text-second hover:text-primary rounded-full lg:rounded-md"
               onClick={() =>
                 handleRemoveFromCart && handleRemoveFromCart(item.id)
               }

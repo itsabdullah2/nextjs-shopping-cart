@@ -13,7 +13,7 @@ const Checkout = () => {
   const totalPrice = price + shipping;
 
   return (
-    <div className="w-96 h-fit bg-primary rounded-2xl p-5">
+    <div className="w-full lg:w-96 h-fit bg-primary rounded-2xl p-5 mx-auto">
       <h3 className="text-white leading-[150%] font-semibold text-xl border-b border-slate-500 pb-2">
         Checkout
       </h3>
