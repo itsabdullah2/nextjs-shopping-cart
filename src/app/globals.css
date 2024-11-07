@@ -5,11 +5,31 @@
 @tailwind utilities;
 
 body {
-font-family: "Poppins", serif;
+  font-family: 'Poppins', serif;
 }
 
 @layer base {
   :root {
     --radius: 0.5rem;
+  }
+}
+
+.loader {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
