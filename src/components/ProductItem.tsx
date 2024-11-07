@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { AddToCartBtn } from './';
+import { AddToCartBtn, SkeletonCard } from './';
 import { useAppState } from '@/context';
 
 const ProductItem = () => {
@@ -10,7 +10,15 @@ const ProductItem = () => {
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 lg:gap-6 mt-8">
-      {isLoading && <p>Loading....</p>}
+      {isLoading && (
+        <div className="col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 lg:gap-6">
+          {Array(9)
+            .fill(0)
+            .map((_, index) => (
+              <SkeletonCard key={index} />
+            ))}
+        </div>
+      )}
       {!isLoading &&
         products &&
         products.map((product) => (
