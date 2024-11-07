@@ -2,13 +2,11 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
+import { AddToCartBtn } from './';
 import { useAppState } from '@/context';
-import { FaStar } from 'react-icons/fa6';
-import { FaRegStarHalfStroke } from 'react-icons/fa6';
 
 const ProductItem = () => {
-  const { isLoading, products, handleAddToCart } = useAppState() || {};
+  const { isLoading, products } = useAppState() || {};
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 lg:gap-6 mt-8">
@@ -43,12 +41,7 @@ const ProductItem = () => {
                 <div></div>
               </div>
               <div className="flex items-center justify-between">
-                <Button
-                  className="bg-primary hover:bg-slate-800 duration-200"
-                  onClick={() => handleAddToCart && handleAddToCart(product)}
-                >
-                  Add To Cart
-                </Button>
+                <AddToCartBtn productId={product.id} product={product} />
                 <Link
                   href={`/${product.id}`}
                   className="bg-primary hover:bg-slate-800 duration-200 text-white h-9 px-4 py-2 rounded-md text-sm"
