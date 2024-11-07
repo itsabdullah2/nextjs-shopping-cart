@@ -10,9 +10,12 @@ interface AppStateContextType {
   isLoading: boolean;
   cart: ProductsType[];
   handleAddToCart: (product: ProductsType) => void;
+  handleRemoveFromCart: (id: string) => void;
+  handleIncrease: (id: string) => void;
+  handleDecrease: (id: string) => void;
 }
 
-const AppStateContext = createContext<AppStateContextType | null>(null);
+export const AppStateContext = createContext<AppStateContextType | null>(null);
 
 export const AppStateProvider = ({
   children,
@@ -38,23 +41,35 @@ export const AppStateProvider = ({
   }, []);
 
   const handleAddToCart = (product: ProductsType): void => {
-    setCart((prev) => {
-      const isExist = prev.find((item: ProductsType) => item.id === product.id);
+    setCart((prev) => [...prev, product]);
+  };
 
-      if (isExist) {
-        // Product exists, increment quantity
-        const updatedCart = prev.map((item) =>
-          item.id === product.id
-            ? { ...item, quantity: item.quantity + 1 }
-            : item
-        );
+  const handleRemoveFromCart = (id: string) => {
+    setCart((prev) => prev.filter((item) => item.id !== id));
+  };
 
-        return updatedCart;
-      } else {
-        // Product doesn't exist, add it with quantity 1
-        return [...prev, { ...product, quantity: 1 }];
-      }
-    });
+  const handleIncrease = (id: string): void => {
+    setCart((prev) =>
+      prev.map((item) =>
+        item.id === id ? { ...item, quantity: item.quantity + 1 } : item
+      )
+    );
+  };
+  const handleDecrease = (id: string): void => {
+    setCart((prev) =>
+      prev
+        .map((item) => {
+          if (item.id === id) {
+            if (item.quantity <= 1) {
+              return null;
+              // handleRemoveFromCart(id);
+            }
+            return { ...item, quantity: item.quantity - 1 };
+          }
+          return item;
+        })
+        .filter((item): item is ProductsType => item !== null)
+    );
   };
 
   const values: AppStateContextType = {
@@ -64,6 +79,9 @@ export const AppStateProvider = ({
     isLoading,
     handleAddToCart,
     cart,
+    handleRemoveFromCart,
+    handleIncrease,
+    handleDecrease,
   };
 
   return (
