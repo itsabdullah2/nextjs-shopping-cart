@@ -29,7 +29,7 @@ export const listOfProducts: ProductsType[] = [
     title: 'sneakers',
     supDescription: 'sporting sneakers',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut facilis sequi explicabo in labore possimus perferendis aspernatur, quasi non reiciendis, laudantium atque et, architecto eum dignissimos. Quidem nostrum omnis deserunt.',
+      "Our casual sneakers offer the perfect blend of comfort and style. With a variety of designs and colors, you can find the perfect pair to complement your wardrobe. Experience unparalleled comfort with our collection of casual sneakers. Crafted with premium materials and advanced technology, these shoes are designed to keep your feet feeling fresh all day long. Our casual sneakers are more than just footwear; they're a statement. Add a touch of personality to your outfit with our trendy designs and vibrant colors.",
     category: 'Sneakers',
     imgUrl: sneakers1.src,
     price: '90',
@@ -41,7 +41,7 @@ export const listOfProducts: ProductsType[] = [
     title: 'sneakers',
     supDescription: 'sporting sneakers',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut facilis sequi explicabo in labore possimus perferendis aspernatur, quasi non reiciendis, laudantium atque et, architecto eum dignissimos. Quidem nostrum omnis deserunt.',
+      "Our casual sneakers offer the perfect blend of comfort and style. With a variety of designs and colors, you can find the perfect pair to complement your wardrobe. Experience unparalleled comfort with our collection of casual sneakers. Crafted with premium materials and advanced technology, these shoes are designed to keep your feet feeling fresh all day long. Our casual sneakers are more than just footwear; they're a statement. Add a touch of personality to your outfit with our trendy designs and vibrant colors.",
     category: 'Sneakers',
     imgUrl: sneakers2.src,
     price: '95',
@@ -53,7 +53,7 @@ export const listOfProducts: ProductsType[] = [
     title: 'sneakers',
     supDescription: 'sporting sneakers',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut facilis sequi explicabo in labore possimus perferendis aspernatur, quasi non reiciendis, laudantium atque et, architecto eum dignissimos. Quidem nostrum omnis deserunt.',
+      "Our casual sneakers offer the perfect blend of comfort and style. With a variety of designs and colors, you can find the perfect pair to complement your wardrobe. Experience unparalleled comfort with our collection of casual sneakers. Crafted with premium materials and advanced technology, these shoes are designed to keep your feet feeling fresh all day long. Our casual sneakers are more than just footwear; they're a statement. Add a touch of personality to your outfit with our trendy designs and vibrant colors.",
     category: 'Sneakers',
     imgUrl: sneakers3.src,
     price: '100',
@@ -65,7 +65,7 @@ export const listOfProducts: ProductsType[] = [
     title: 'camera',
     supDescription: 'Camera for content creation',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut facilis sequi explicabo in labore possimus perferendis aspernatur, quasi non reiciendis, laudantium atque et, architecto eum dignissimos. Quidem nostrum omnis deserunt.',
+      "Our Canon is your ultimate companion for capturing stunning photos and videos. With its [key feature, e.g., high-resolution sensor, fast autofocus], you'll be able to capture every detail, from breathtaking landscapes to intimate portraits. Its sleek design and intuitive interface make it easy to use, while its durable build ensures it can withstand the rigors of everyday life.",
     category: 'Camera',
     imgUrl: camera1.src,
     price: '500',
@@ -77,7 +77,7 @@ export const listOfProducts: ProductsType[] = [
     title: 'camera',
     supDescription: 'Camera for content creation',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut facilis sequi explicabo in labore possimus perferendis aspernatur, quasi non reiciendis, laudantium atque et, architecto eum dignissimos. Quidem nostrum omnis deserunt.',
+      "Our Canon is your ultimate companion for capturing stunning photos and videos. With its [key feature, e.g., high-resolution sensor, fast autofocus], you'll be able to capture every detail, from breathtaking landscapes to intimate portraits. Its sleek design and intuitive interface make it easy to use, while its durable build ensures it can withstand the rigors of everyday life.",
     category: 'Camera',
     imgUrl: camera2.src,
     price: '600',
@@ -89,7 +89,7 @@ export const listOfProducts: ProductsType[] = [
     title: 'camera',
     supDescription: 'Camera for content creation',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut facilis sequi explicabo in labore possimus perferendis aspernatur, quasi non reiciendis, laudantium atque et, architecto eum dignissimos. Quidem nostrum omnis deserunt.',
+      "Our Canon is your ultimate companion for capturing stunning photos and videos. With its [key feature, e.g., high-resolution sensor, fast autofocus], you'll be able to capture every detail, from breathtaking landscapes to intimate portraits. Its sleek design and intuitive interface make it easy to use, while its durable build ensures it can withstand the rigors of everyday life.",
     category: 'Camera',
     imgUrl: camera3.src,
     price: '650',
@@ -101,7 +101,7 @@ export const listOfProducts: ProductsType[] = [
     title: 'watch',
     supDescription: 'Watch for casual men',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut facilis sequi explicabo in labore possimus perferendis aspernatur, quasi non reiciendis, laudantium atque et, architecto eum dignissimos. Quidem nostrum omnis deserunt.',
+      'Elevate your wrist with our [watch model]. This stylish timepiece combines classic design with cutting-edge technology. you can stay connected and active. Its [material, e.g., stainless steel, leather] band offers both comfort and durability, making it the perfect accessory for any occasion.',
     category: 'Watch',
     imgUrl: watch1.src,
     price: '300',
@@ -113,7 +113,7 @@ export const listOfProducts: ProductsType[] = [
     title: 'watch',
     supDescription: 'Watch for casual men',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut facilis sequi explicabo in labore possimus perferendis aspernatur, quasi non reiciendis, laudantium atque et, architecto eum dignissimos. Quidem nostrum omnis deserunt.',
+      'Elevate your wrist with our [watch model]. This stylish timepiece combines classic design with cutting-edge technology. you can stay connected and active. Its [material, e.g., stainless steel, leather] band offers both comfort and durability, making it the perfect accessory for any occasion.',
     category: 'Watch',
     imgUrl: watch2.src,
     price: '350',
@@ -125,7 +125,7 @@ export const listOfProducts: ProductsType[] = [
     title: 'watch',
     supDescription: 'Watch for casual men',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut facilis sequi explicabo in labore possimus perferendis aspernatur, quasi non reiciendis, laudantium atque et, architecto eum dignissimos. Quidem nostrum omnis deserunt.',
+      'Elevate your wrist with our [watch model]. This stylish timepiece combines classic design with cutting-edge technology. you can stay connected and active. Its [material, e.g., stainless steel, leather] band offers both comfort and durability, making it the perfect accessory for any occasion.',
     category: 'Watch',
     imgUrl: watch3.src,
     price: '200',
@@ -137,7 +137,7 @@ export const listOfProducts: ProductsType[] = [
     title: 'backpack',
     supDescription: 'Your backpack for any trip',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut facilis sequi explicabo in labore possimus perferendis aspernatur, quasi non reiciendis, laudantium atque et, architecto eum dignissimos. Quidem nostrum omnis deserunt.',
+      "It's a lifestyle. Designed to carry all your essentials with ease, this backpack features multiple compartments, spacious pockets, and a comfortable ergonomic design. Its durable construction and water-resistant materials ensure your belongings stay safe and dry, no matter where your adventures take you.",
     category: 'Backpack',
     imgUrl: backpack1.src,
     price: '150',
@@ -149,7 +149,7 @@ export const listOfProducts: ProductsType[] = [
     title: 'backpack',
     supDescription: 'Your backpack for any trip',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut facilis sequi explicabo in labore possimus perferendis aspernatur, quasi non reiciendis, laudantium atque et, architecto eum dignissimos. Quidem nostrum omnis deserunt.',
+      "It's a lifestyle. Designed to carry all your essentials with ease, this backpack features multiple compartments, spacious pockets, and a comfortable ergonomic design. Its durable construction and water-resistant materials ensure your belongings stay safe and dry, no matter where your adventures take you.",
     category: 'Backpack',
     imgUrl: backpack2.src,
     price: '120',
@@ -161,7 +161,7 @@ export const listOfProducts: ProductsType[] = [
     title: 'backpack',
     supDescription: 'Your backpack for any trip',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut facilis sequi explicabo in labore possimus perferendis aspernatur, quasi non reiciendis, laudantium atque et, architecto eum dignissimos. Quidem nostrum omnis deserunt.',
+      "It's a lifestyle. Designed to carry all your essentials with ease, this backpack features multiple compartments, spacious pockets, and a comfortable ergonomic design. Its durable construction and water-resistant materials ensure your belongings stay safe and dry, no matter where your adventures take you.",
     category: 'Backpack',
     imgUrl: backpack3.src,
     price: '100',
