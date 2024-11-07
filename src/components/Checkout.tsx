@@ -29,7 +29,9 @@ const Checkout = () => {
       </div>
       <div className="flex items-center justify-between mt-10">
         <p className="text-slate-200 font-medium text-[16px]">Total</p>
-        <h2 className="text-white font-bold text-2xl">${totalPrice}</h2>
+        <h2 className="text-white font-bold text-2xl">
+          ${Number(totalPrice).toLocaleString()}
+        </h2>
       </div>
     </div>
   );
