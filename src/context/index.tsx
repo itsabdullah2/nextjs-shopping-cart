@@ -13,6 +13,8 @@ interface AppStateContextType {
   handleRemoveFromCart: (id: string) => void;
   handleIncrease: (id: string) => void;
   handleDecrease: (id: string) => void;
+  isNavOpen: boolean;
+  handleNavbar: () => void;
 }
 
 export const AppStateContext = createContext<AppStateContextType | null>(null);
@@ -27,6 +29,7 @@ export const AppStateProvider = ({
   const [error, setError] = useState<string>('');
   const [cart, setCart] = useState<ProductsType[]>([]);
   const [click, setClick] = useState<boolean>(false);
+  const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
 
   useEffect(() => {
     const getData = async () => {
@@ -46,6 +49,10 @@ export const AppStateProvider = ({
 
   const handleRemoveFromCart = (id: string) => {
     setCart((prev) => prev.filter((item) => item.id !== id));
+  };
+
+  const handleNavbar = (): void => {
+    setIsNavOpen((prev) => !prev);
   };
 
   const handleIncrease = (id: string): void => {
@@ -82,6 +89,8 @@ export const AppStateProvider = ({
     handleRemoveFromCart,
     handleIncrease,
     handleDecrease,
+    isNavOpen,
+    handleNavbar,
   };
 
   return (
