@@ -9,8 +9,6 @@ const CartItem = () => {
   const { cart, handleIncrease, handleDecrease, handleRemoveFromCart } =
     useAppState() || {};
 
-  console.log('some shit');
-
   return (
     <div className="flex-1 flex flex-col gap-4">
       {/* Render product items if cart exists and has items */}
