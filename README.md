@@ -1,4 +1,4 @@
-## 🤖 Shoppy
+## 🛒 Shoppy
 
 - Shoppy is a shopping cart application that allows users to add products to their cart, view their cart, and price details.
 
