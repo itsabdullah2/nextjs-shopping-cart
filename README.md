@@ -1,3 +1,22 @@
+## 🤖 Shoppy
+
+- Shoppy is a shopping cart application that allows users to add products to their cart, view their cart, and price details.
+
+## 📦 Technologies and tools
+
+- The application is built using Next.js, a React framework, and TypeScript, Tailwind CSS, and Context API.
+
+## 🎯 Features
+
+- The user able to add products to their cart, view their cart, and price details.
+- Also, the user can add and remove products from their cart.
+- The application is responsive and works on desktop, laptop and mobile devices.
+- The application is also deployed on Vercel.
+
+### 💻 Demo: https://shoppy-rouge.vercel.app/
+
+=============
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
